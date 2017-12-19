@@ -1,12 +1,19 @@
 (function (exports) {
   exports.SecretSanta = function () {
 
+    var list = []
+
     function showList() {
-      return "User";
+      return list;
+    }
+
+    function addUser(user) {
+      list.push(user)
     }
 
     return {
-      showList: showList
+      showList: showList,
+      addUser: addUser
     }
   };
 })(this);

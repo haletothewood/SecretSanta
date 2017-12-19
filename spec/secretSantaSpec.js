@@ -4,6 +4,7 @@ describe("Secret Santa", function () {
   var ss = SecretSanta()
 
   it("adds users to a list", function () {
-    expect(ss.showList()).toEqual(user)
+    ss.addUser(user)
+    expect(ss.showList()).toContain(user)
   })
 })
