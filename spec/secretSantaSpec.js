@@ -7,4 +7,12 @@ describe("Secret Santa", function () {
     ss.addUser(user)
     expect(ss.showList()).toContain(user)
   })
+
+  it("can add multiple users to a list", function () {
+    var user2 = "User2"
+    var user3 = "User3"
+    ss.addUser(user2)
+    ss.addUser(user3)
+    expect(ss.showList()).toContain(user, user2, user3)
+  })
 })
