@@ -1,9 +1,9 @@
 describe("Secret Santa", function () {
 
-  var user = "User"
-  var user2 = "User2"
-  var user3 = "User3"
-  var User4 = "User4"
+  var user = {user: "User", email: "user@email.com"}
+  var user2 = {user: "User2", email: "user2@email.com"}
+  var user3 = {user: "User3", email: "user3@email.com"}
+  var User4 = {user: "User4", email: "user4@email.com"}
   var ss = SecretSanta()
 
   it("adds users to a list", function () {
