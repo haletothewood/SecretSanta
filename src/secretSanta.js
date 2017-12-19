@@ -9,7 +9,6 @@
 
     function addUser(user) {
       list.push(user)
-      console.log(list)
       return user
     }
 
