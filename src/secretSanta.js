@@ -12,8 +12,13 @@
       return user
     }
 
-    function pickUser() {
-      var randomUser = list[Math.floor(Math.random() * list.length)];
+    function pickUser(currentUser) {
+      while (true) {
+        var randomUser = list[Math.floor(Math.random() * list.length)];
+        if (randomUser !== currentUser) {
+          break;
+        }
+      }
       return randomUser
     }
 
